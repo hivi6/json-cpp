@@ -1,0 +1,30 @@
+json:
+    value
+value:
+    :NULL:
+    :TRUE:
+    :FALSE:
+    number
+    string
+    array
+    object
+number:
+    integer fraction? exponent?
+integer:
+    ('-'|'+')? [0-9]+
+fraction:
+    '.' [0-9]+
+exponent:
+    ('e'|'E') ('-'|'+')? [0-9]+
+string:
+    '"' characters? '"'
+characters:
+    ALL_CHARACTERS
+array:
+    '[' elements? ']'
+elements:
+    value (',' value)* ','?
+object:
+    '{' pairs? '}'
+pairs:
+    string ':' value (',' string ':' value)* ','?

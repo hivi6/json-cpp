@@ -1,0 +1,5 @@
+1. Json json = {}, doesn't led to creation of an empty array, instead it calls the default constructor which results in null type for json varaible.
+Instead use,
+    Json json = JsonArray();
+for array with elements we can use,
+    Json json = {1, 2, "abc"};

@@ -1,0 +1,35 @@
+{
+    "null-character": null,
+    "true-value": true,
+    "false-value": false,
+    "array": [
+        1,
+        2,
+        3,
+        "abc",
+        -1.2e19,
+        0.221,
+        "xyz",
+        false,
+        null,
+        "ok"
+    ],
+    "empty-array" : [],
+    "empty-object" : {},
+    "object-value" : {
+        "name" : "nested object value",
+        "value" : "hehe",
+        "nice" : "yes",
+        "possible" : true,
+        "doctors" : [
+            {
+                "name" : "hehe1",
+                "possible" : false
+            },
+            {
+                "name" : "hehe2",
+                "possible" : true
+            }
+        ]
+    }
+}
