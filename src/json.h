@@ -1023,6 +1023,8 @@ ParseResult readJson(string filepath)
 {
     string s;
     ifstream fin(filepath);
+    if (!fin.good())
+        return ParseResult().setError("file " + filepath + " not found!");
     while (fin) {
         string temp;
         fin >> temp;
