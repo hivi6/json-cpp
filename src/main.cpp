@@ -19,7 +19,12 @@ void typeTable(const Json &json)
 
 int main(int argc, char **argv)
 {
-    auto res = readJson(argv[argc - 1]);
-    cout << (res.isError() ? res.getError() : res.getJson()) << endl;
+    Json json = {
+        JsonPair{"number", 123},
+        JsonPair{"number2", -1.2e44},
+        JsonPair{"array", {1, 2, 3, "str1", false, true, nullptr}},
+    };
+    cout << "JsonFile: ";
+    cout << json;
     return 0;
 }
